@@ -1,4 +1,4 @@
-# Russian Losses in Ukraine [Vim plugin]
+# Russian Losses in Ukraine [Vim statusline]
 Silly Vimscript + Python to parse today's information about the russian losses during the war in Ukraine, and represent in the Vim status line. 
 
 All information parses from [this website](https://index.minfin.com.ua/ua/russian-invading/casualties/) and transforms into categories provided by the General Staff of the Ukrainian Armed Forces ([example](https://twitter.com/GeneralStaffUA/status/1543474012709339136)).
