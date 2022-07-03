@@ -25,7 +25,7 @@ No, it's not. We are parsing information from the 3rd side sources, so it can br
 
 ## Installation 
 
-I have no idea what's is the best practices of the Vim plugins...
+I have no idea what's the best practices of the Vim plugins...
 
 1. Clone this repo.
 2. I've used `pathogen` as a vim-plugin manager:
@@ -33,10 +33,10 @@ I have no idea what's is the best practices of the Vim plugins...
 cd ~/.vim/bundle
 ln -s ~/RussianLossesInUkraine/ .
 ```
-3. Install `requirements.txt` to the virtual environment:
+3. Install `requirements.txt` dependencies to the virtual environment:
 ```
 cd ~/RussianLossesInUkraine/plugin
 virtualenv env
 pip install -r requirements.txt
 ```
-Edit the second line in the `~/RussianLossesInUkraine/plugin/losses.vim`, and specify your path to the `site-packages` in the eniveronment. Sorry...
+4. Edit the [second line](plugin/losses.vim#L2) in the `~/RussianLossesInUkraine/plugin/losses.vim`, and specify your path to the `site-packages` in the virtual eniveronment. Sorry...
