@@ -36,7 +36,8 @@ class RussianLosses:
                     result_info.append(category)
         return ", ".join(result_info)
 
-    def _replace(self, text: str) -> str:
+    @staticmethod
+    def _replace(text: str) -> str:
         remove_occur = {
             "Особовий склад": "Liquidated personnel",
             "Танки": "Tanks",
@@ -62,7 +63,8 @@ class RussianLosses:
             text = re.sub(old, new, text, flags=re.IGNORECASE)
         return text
 
-    def _calculations(self, cleaned: List[str]) -> List[str]:
+    @staticmethod
+    def _calculations(cleaned: List[str]) -> List[str]:
         sum_categories = {
             "Artillery systems/MLRS": ("Artillery systems", "MLRS"),
             "Aircraft/Helicopters": ("Aircraft", "Helicopters"),
